@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CC0C211E2DF4940400342339 /* HackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0C211D2DF4940400342339 /* HackApp.swift */; };
-		CC0C21202DF4940400342339 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0C211F2DF4940400342339 /* ContentView.swift */; };
 		CC0C21222DF4940600342339 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0C21212DF4940600342339 /* Assets.xcassets */; };
 		CC0C21252DF4940600342339 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0C21242DF4940600342339 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,10 +15,14 @@
 /* Begin PBXFileReference section */
 		CC0C211A2DF4940400342339 /* Hack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0C211D2DF4940400342339 /* HackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackApp.swift; sourceTree = "<group>"; };
-		CC0C211F2DF4940400342339 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC0C21212DF4940600342339 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC0C21242DF4940600342339 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FBA3A4702DF4E08D008948E2 /* Pantallas */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Pantallas; sourceTree = "<group>"; };
+		FBA3A4742DF4E120008948E2 /* Componentes */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Componentes; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CC0C21172DF4940400342339 /* Frameworks */ = {
@@ -51,8 +54,9 @@
 		CC0C211C2DF4940400342339 /* Hack */ = {
 			isa = PBXGroup;
 			children = (
+				FBA3A4742DF4E120008948E2 /* Componentes */,
+				FBA3A4702DF4E08D008948E2 /* Pantallas */,
 				CC0C211D2DF4940400342339 /* HackApp.swift */,
-				CC0C211F2DF4940400342339 /* ContentView.swift */,
 				CC0C21212DF4940600342339 /* Assets.xcassets */,
 				CC0C21232DF4940600342339 /* Preview Content */,
 			);
@@ -81,6 +85,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FBA3A4702DF4E08D008948E2 /* Pantallas */,
+				FBA3A4742DF4E120008948E2 /* Componentes */,
 			);
 			name = Hack;
 			productName = Hack;
@@ -137,7 +145,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC0C21202DF4940400342339 /* ContentView.swift in Sources */,
 				CC0C211E2DF4940400342339 /* HackApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
