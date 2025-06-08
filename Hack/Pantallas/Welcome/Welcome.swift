@@ -47,9 +47,7 @@ struct Welcome_view: View {
                         .foregroundColor(.white)
                         .shadow(color: Color.black.opacity(0.1), radius: 2, x: 0, y: 2)
 
-                    Button(action: {
-                        // Acción del botón
-                    }) {
+                    NavigationLink(destination: OnboardingView()) {
                         Text("Comenzar")
                             .font(.headline)
                             .foregroundColor(Color(hex: "#2c6b3b"))
@@ -68,7 +66,7 @@ struct Welcome_view: View {
     }
 }
 
-//  Conversor HEX
+// Conversor HEX
 extension Color {
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
@@ -89,8 +87,4 @@ extension Color {
             opacity: Double(a) / 255
         )
     }
-}
-
-#Preview {
-    Welcome_view()
 }

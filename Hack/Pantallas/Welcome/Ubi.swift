@@ -418,7 +418,3 @@ struct Project_view: View {
         .background(Color.white.ignoresSafeArea())
     }
 }
-
-#Preview {
-    OnboardingView()
-}

@@ -3,8 +3,9 @@ import SwiftUI
 struct Medidas: View {
     @State private var ancho: String = ""
     @State private var alto: String = ""
-    @State private var paso: Int = 0  
+    @State private var paso: Int = 0
     @State private var presupuesto: String = ""
+    @State private var mostrarResultados = false
 
     var anchoValor: CGFloat { CGFloat(Double(ancho) ?? 0) }
     var altoValor: CGFloat { CGFloat(Double(alto) ?? 0) }
@@ -129,8 +130,12 @@ struct Medidas: View {
                         Spacer()
                     }
                     .frame(maxWidth: .infinity)
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+                            mostrarResultados = true
+                        }
+                    }
                 }
-
                 Spacer()
             }
             .padding(.horizontal)
@@ -175,6 +180,10 @@ struct Medidas: View {
                     }
                 }
             }
+        }
+        // NUEVO: Navegación moderna para iOS 16+
+        .navigationDestination(isPresented: $mostrarResultados) {
+            Resultados()
         }
     }
 
@@ -238,12 +247,5 @@ struct EntityEffectView: View {
             }
         }
         .onAppear { isAnimating = true }
-    }
-}
-
-
-#Preview {
-    NavigationView {
-        Medidas()
     }
 }
