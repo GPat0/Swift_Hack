@@ -22,8 +22,8 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		DEFAF1652DF4F2A700A23FBF /* Componentes */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Componentes; sourceTree = "<group>"; };
 		FBA3A4702DF4E08D008948E2 /* Pantallas */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Pantallas; sourceTree = "<group>"; };
-		FBA3A4742DF4E120008948E2 /* Componentes */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Componentes; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +90,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				DEFAF1652DF4F2A700A23FBF /* Componentes */,
 				FBA3A4702DF4E08D008948E2 /* Pantallas */,
-				FBA3A4742DF4E120008948E2 /* Componentes */,
 			);
 			name = Hack;
 			productName = Hack;
