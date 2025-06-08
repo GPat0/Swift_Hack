@@ -7,10 +7,10 @@ struct MapView: UIViewRepresentable {
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
-        mapView.mapType = .mutedStandard
+        mapView.mapType = .standard
         
         if let window = UIApplication.shared.windows.first {
-                window.overrideUserInterfaceStyle = .dark
+            window.overrideUserInterfaceStyle = .light
             }
 
         let center = CLLocationCoordinate2D(latitude: 25.6866, longitude: -100.3161)

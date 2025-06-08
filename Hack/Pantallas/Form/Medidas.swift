@@ -3,7 +3,7 @@ import SwiftUI
 struct Medidas: View {
     @State private var ancho: String = ""
     @State private var alto: String = ""
-    @State private var paso: Int = 0 // 0 = dimensiones, 1 = presupuesto, 2 = modelado
+    @State private var paso: Int = 0  
     @State private var presupuesto: String = ""
 
     var anchoValor: CGFloat { CGFloat(Double(ancho) ?? 0) }

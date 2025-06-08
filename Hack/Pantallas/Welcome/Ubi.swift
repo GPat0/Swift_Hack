@@ -15,6 +15,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
 struct OnboardingView: View {
     @State private var currentPage: Int = 0
     @State private var showLocationRequest: Bool = false
+    @State private var navigateToMap: Bool = false
     @StateObject private var locationManager = LocationManager()
 
     var body: some View {
@@ -23,7 +24,9 @@ struct OnboardingView: View {
                 CustomLocationPermissionView(
                     onAllow: {
                         locationManager.requestPermission()
-                        showLocationRequest = false
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                        navigateToMap = true
+                                                    }
                     },
                     onDeny: {
                         showLocationRequest = false
@@ -45,6 +48,9 @@ struct OnboardingView: View {
                     onBack: { withAnimation { currentPage = 1 } }
                 )
             }
+            NavigationLink(destination: Mapa(), isActive: $navigateToMap) {
+                                EmptyView()
+                            }
         }
         .background(Color.white.ignoresSafeArea())
     }
