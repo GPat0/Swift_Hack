@@ -147,8 +147,8 @@ Bloques de adobe: El adobe es un material natural con alta inercia térmica y ex
                                         content: {
                                             VStack(alignment: .leading, spacing: 4) {
                                                 Text("""
-Lámina galvanizada: La lámina protege de lluvias intensas, frecuentes en la región, y su instalación inclinada facilita el escurrimiento del agua, reduciendo el riesgo de filtraciones. Aislante ecológico (mezcla de viruta, cal y tierra): Este aislante natural reduce la transferencia de calor al interior, manteniendo la casa fresca durante olas de calor y evitando pérdidas de calor en invierno. Además, la viruta y la tierra son materiales de bajo impacto ambiental y fácil acceso local.
-""")
+                                                Teja de barro: La teja de barro, protege eficazmente contra lluvias intensas y frecuentes en la región. Su diseño inclinado facilita el escurrimiento del agua, reduciendo el riesgo de filtraciones. Además, la teja de barro es un excelente aislante térmico natural: ayuda a mantener la vivienda fresca durante olas de calor extremo y conserva el calor en invierno, adaptándose a temperaturas que pueden superar los 42 °C en verano y descender a 8 °C en invierno. La estructura de madera sostenible aporta resistencia y es de bajo impacto ambiental.
+                                                """)
                                                     .font(.system(size: 14))
                                                     .foregroundColor(.black)
                                             }
@@ -158,7 +158,7 @@ Lámina galvanizada: La lámina protege de lluvias intensas, frecuentes en la re
                                             HStack {
                                                 Image(systemName: "house.fill")
                                                     .foregroundColor(.green)
-                                                Text("Techo de lámina con aislante")
+                                                Text("Techo de tejas de barro")
                                                     .font(.system(size: 16, weight: .semibold))
                                             }
                                         }
@@ -201,7 +201,7 @@ Tubos de terracota: Aprovechan la evaporación y la inercia térmica de la arcil
                                     .shadow(radius: 4)
                             } else if selected == 3 {
                                 Text("Lista de Materiales").font(.headline)
-                                Text("Con un presupuesto de 80,000 pesos, esto es una lista de materiales para empezar a construir tu hogar.")
+                                Text("Con un presupuesto de 100,000 pesos, esto es una lista de materiales para empezar a construir tu hogar.")
                                     .padding(.bottom, 8)
                                 
                                 DisclosureGroup("1️⃣ Estructura y Paredes", isExpanded: $showFase1) {
@@ -221,7 +221,7 @@ Tubos de terracota: Aprovechan la evaporación y la inercia térmica de la arcil
                                 DisclosureGroup("2️⃣ Techo de Lámina con Aislante", isExpanded: $showFase2) {
                                     VStack(alignment: .leading, spacing: 8) {
                                         tableFase2()
-                                        Text("Subtotal Fase 2: $19,880 MXN")
+                                        Text("Subtotal Fase 2: $41,800 MXN")
                                             .font(.subheadline)
                                             .fontWeight(.bold)
                                             .padding(.top, 4)
@@ -246,7 +246,7 @@ Tubos de terracota: Aprovechan la evaporación y la inercia térmica de la arcil
                                 .fontWeight(.bold)
                                 .padding(.vertical, 4)
                                 
-                                Text("Total General: $80,740 MXN")
+                                Text("Total General: $102,660 MXN")
                                     .font(.title3)
                                     .fontWeight(.bold)
                                     .foregroundColor(.green)
@@ -268,8 +268,4 @@ Tubos de terracota: Aprovechan la evaporación y la inercia térmica de la arcil
             }
         }
     }
-}
-
-#Preview {
-    Resultados()
 }
